@@ -30,8 +30,6 @@ public class UserService {
 		return repo.insert(obj);
 	}
 
-<<<<<<< Updated upstream
-=======
 	public void delete(String id) {
 		findById(id);
 		repo.deleteById(id);
@@ -48,7 +46,6 @@ public class UserService {
 		newObj.setEmail(obj.getEmail());
 	}
 	
->>>>>>> Stashed changes
 	public User fromDTO(UserDTO objDto) {
 		return new User(objDto.getId(), objDto.getName(), objDto.getEmail());
 	}
